@@ -1,13 +1,27 @@
 # Gitflow
 
+
+![image info](./gitflow.png)
+
+
 Orientações para a utilização do github como versionamento de software.
 
 `
 Primeiramente, se faz necessária a criação repositório no github. 
+`
+
+`
 Após isso, no computador, entrar no diretório em que deseja clonar o repositório.
+`
+
+`
 O criador do repositório deve adicionar outros colaboradores ao projeto em Settings -> Collaborators.
+`
+
+`
 Colaboradores devem aceitar se juntar ao projeto em Organizations -> Join -> Accept invite.
 `
+
 
 # DA UTILIZAÇÃO DO GIT
 
@@ -90,6 +104,7 @@ Ir para a branch que deseja aplicar as modificações
 ```
 git merge {nome da outra branch}
 ```
+
 
 
 
