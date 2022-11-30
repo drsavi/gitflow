@@ -48,7 +48,7 @@ Colaboradores devem aceitar se juntar ao projeto em Organizations -> Join -> Acc
 </pre>
 
 
-# DA UTILIZAÇÃO DO GIT
+<h2>DA UTILIZAÇÃO DO GIT</h2>
 
 <h3>Configurar usuario no seu git</h3>
 
@@ -143,6 +143,58 @@ git stash pop
 git merge {nome da outra branch}
 ```
 
+<h2>Resolução de conflitos utilizando Git e VsCode</h2>
+
+Para configurar o VS Code como editor padrão, basta rodar o comando no terminal:
+
+```
+git config --global core.editor "code --wait"
+```
+
+E quando precisarmos do editor, quem vai aparecer é o VS Code. Como nos casos de rebase, merge, commit, add -p, etc.
+
+Para garantir que realmente houveram alterações, podemos rodar o comando que abre as configurações globais do Git no editor de textos e o VS Code irá abrir automágicamente:
+
+```
+git config --global -e
+```
+
+Agora, para adicionar o VS Code como nossa ferramenta padrão de merge, vamos rodar o comando git config --global -e e adicionar as linhas:
+
+```
+[merge]
+	tool = vscode
+[mergetool "vscode"]
+	cmd = code --wait $MERGED
+[diff]
+	tool = vscode
+[difftool "vscode"]
+	cmd = code --wait --diff
+```
 
 
+Agora basta rodar o comando git mergetool em um merge com conflitos.
 
+Exemplo:
+
+
+Digamos que eu acabei de rodar o git merge master em uma branch que estava desatualizada.
+
+Ao rodar o git status vemos que aconteceu um conflito.
+
+Podemos então rodar o git mergetool e o Visual Studio Code irá abrir com a interface para correção dos conflitos.
+
+Aparecerá uma tela como essa:
+
+![image info](./resolvendomerge.png)
+
+Onde o que está em verde é o que temos em nossa branch e o que está em azul são as alterações que devemos escolher se aceitamos ou não.
+
+Logo acima das alterações temos os botões para aceitar ou recusar uma alteração:
+
+| Botões             | Resultado                                                        |
+|--------------------|------------------------------------------------------------------|
+|Accept Current Change | Aceitar a mudança que temos localmente/em nossa branch atual   |
+|Accept Incoming Change| Aceitar a mudança que estamos recebendo de outra branch/remoto |
+|Accept Both Changes   | Aceitar ambas as alterações                                    |
+|Compare Changes       | Comparar as alterações                                         |
