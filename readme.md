@@ -5,19 +5,24 @@
 ![image info](./diagramagitflow.png)
 
 <h3>Master</h3>
-<pre>Nesta branch está o código do produto que está em produção, liberado para os clientess, o qual ocorre uma atualização e liberação de nova versão a cada intervalo de tempo (quize dias, por exemplo). A master realiza merges os códigos testados da branch develop e pode receber alterações de hotfix.</pre>
+<pre>Nesta branch está o código do produto que está em produção, liberado para os clientess, o qual ocorre uma atualização e liberação de nova versão a cada intervalo de tempo (quize dias, por exemplo). 
+A master realiza merges os códigos testados da branch develop e pode receber alterações de hotfix.</pre>
 
 <h3>Develop</h3>
-<pre>Nesta branch está o código do produto em staging ou pré produção, onde ocorrem os testes antes que o produto seja liberado para utilização dos clientes, podendo ser realizadas alterações diariamente, geralmente por deploy. Recebe modificações vindas de features e bugfix.</pre>
+<pre>Nesta branch está o código do produto em staging ou pré produção, onde ocorrem os testes antes que o produto seja liberado para utilização dos clientes, podendo ser realizadas alterações diariamente, geralmente por deploy. 
+Recebe modificações vindas de features e bugfix.</pre>
 
 <h3>Hotfix</h3>
-<pre>Esta branch criada a partir da master é utilizada quando existe a necessidade de realizar uma correção diretamente dentro do ambiente de produção (master). Geralmente para aplicar correções críticas, que necessitam ser colocadas rapidamente em produção. Após ser fechada, a hotfix é finalizada e passa a fazer parte tanto do ambiente de staging quanto de produção (merge com develop e master)</pre>
+<pre>Esta branch criada a partir da master é utilizada quando existe a necessidade de realizar uma correção diretamente dentro do ambiente de produção (master). Geralmente para aplicar correções críticas, que necessitam ser colocadas rapidamente em produção. 
+Após ser fechada, a hotfix é finalizada e passa a fazer parte tanto do ambiente de staging quanto de produção (merge com develop e master)</pre>
 
 <h3>Bugfix</h3>
-<pre>Esta branch deve ser criada quando um erro é detectado durante testes com a equipe de QA, realizados no ambiente de staging. Se aplica a features novas que ainda não fazem parte do ambiente de produção e portanto se iniciam e encerram a partir da branch develop.</pre>
+<pre>Esta branch deve ser criada quando um erro é detectado durante testes com a equipe de QA, realizados no ambiente de staging. 
+Se aplica a features novas que ainda não fazem parte do ambiente de produção e portanto se iniciam e encerram a partir da branch develop.</pre>
 
 <h3>Feature</h3>
-<pre>Esta branch é criada ao iniciar uma nova funcionalidade no projeto, que receberá novos commits com o código específico para esta determinada funcionalidade, como a criação de uma nova tela de cadastro, por exemplo. Quando o desenvolvimento da funcionalidade for concluído, a branch é integrada ao código do ambiente de staging, ou seja, a develop.</pre>
+<pre>Esta branch é criada ao iniciar uma nova funcionalidade no projeto, que receberá novos commits com o código específico para esta determinada funcionalidade, como a criação de uma nova tela de cadastro, por exemplo. 
+Quando o desenvolvimento da funcionalidade for concluído, a branch é integrada ao código do ambiente de staging, ou seja, a develop.</pre>
 
 
 <h2>Fluxo do tabalho realizado:</h2>
