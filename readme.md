@@ -6,7 +6,7 @@
 
 <h3>Master</h3>
 
-<pre>Nesta branch está o código do produto que está em produção, liberado para os clientess, o qual ocorre uma atualização e liberação de nova versão a cada intervalo de tempo (quize dias, por exemplo). 
+<pre>Nesta branch está o código do produto que está em produção, liberado para os clientes, o qual ocorre uma atualização e liberação de nova versão a cada intervalo de tempo (quize dias, por exemplo). 
 A master realiza merges os códigos testados da branch develop e pode receber alterações de hotfix.</pre>
 
 <h3>Develop</h3>
@@ -16,7 +16,8 @@ Recebe modificações vindas de features e bugfix.</pre>
 
 <h3>Hotfix</h3>
 
-<pre>Esta branch criada a partir da master é utilizada quando existe a necessidade de realizar uma correção diretamente dentro do ambiente de produção (master). Geralmente para aplicar correções críticas, que necessitam ser colocadas rapidamente em produção. 
+<pre>Esta branch criada a partir da master é utilizada quando existe a necessidade de realizar uma correção diretamente dentro do ambiente de produção (master). 
+Geralmente para aplicar correções críticas, que necessitam ser colocadas rapidamente em produção. 
 Após ser fechada, a hotfix é finalizada e passa a fazer parte tanto do ambiente de staging quanto de produção (merge com develop e master)</pre>
 
 <h3>Bugfix</h3>
