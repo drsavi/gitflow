@@ -6,10 +6,10 @@
 
 <h3>Master</h3>
 
-<pre>
+
 Nesta branch está o código do produto que está em produção, liberado para os clientes, o qual ocorre uma atualização e liberação de nova versão a cada intervalo de tempo (quize dias, por exemplo). 
 A master realiza merges os códigos testados da branch develop e pode receber alterações de hotfix.
-</pre>
+
 
 <h3>Develop</h3>
 
