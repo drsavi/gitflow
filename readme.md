@@ -29,12 +29,13 @@ Se aplica a features novas que ainda não fazem parte do ambiente de produção 
 
 <h3>Feature</h3>
 
-<pre>Esta branch é criada ao iniciar uma nova funcionalidade no projeto, que receberá novos commits com o código específico para esta determinada funcionalidade, como a criação de uma nova tela de cadastro, por exemplo. 
+Esta branch é criada ao iniciar uma nova funcionalidade no projeto, que receberá novos commits com o código específico para esta determinada funcionalidade, como a criação de uma nova tela de cadastro, por exemplo. 
 Quando o desenvolvimento da funcionalidade for concluído, a branch é integrada ao código do ambiente de staging, ou seja, a develop.
 
 <h2>Fluxo do tabalho realizado:</h2>
 
 ![image info](./gitflow.png)
+
 
 <h2>Orientações para a utilização do github como versionamento de software.</h2>
 
