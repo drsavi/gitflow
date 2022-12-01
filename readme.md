@@ -6,8 +6,10 @@
 
 <h3>Master</h3>
 
-<pre>Nesta branch está o código do produto que está em produção, liberado para os clientes, o qual ocorre uma atualização e liberação de nova versão a cada intervalo de tempo (quize dias, por exemplo). 
-A master realiza merges os códigos testados da branch develop e pode receber alterações de hotfix.</pre>
+<pre>
+Nesta branch está o código do produto que está em produção, liberado para os clientes, o qual ocorre uma atualização e liberação de nova versão a cada intervalo de tempo (quize dias, por exemplo). 
+A master realiza merges os códigos testados da branch develop e pode receber alterações de hotfix.
+</pre>
 
 <h3>Develop</h3>
 
@@ -29,7 +31,6 @@ Se aplica a features novas que ainda não fazem parte do ambiente de produção 
 
 <pre>Esta branch é criada ao iniciar uma nova funcionalidade no projeto, que receberá novos commits com o código específico para esta determinada funcionalidade, como a criação de uma nova tela de cadastro, por exemplo. 
 Quando o desenvolvimento da funcionalidade for concluído, a branch é integrada ao código do ambiente de staging, ou seja, a develop.</pre>
-
 
 <h2>Fluxo do tabalho realizado:</h2>
 
